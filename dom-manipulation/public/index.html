@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manipulation</title>
+    <link rel="stylesheet" href="./index.css">
+
+</head>
+
+<body>
+    <h1>User Registration</h1>
+    <form action="">
+        <div>
+            <label for="name">Name: </label>
+            <input type="text" id="name">
+        </div>
+        <div>
+            <label for="email">E-mail: </label>
+            <input type="email" id="email">
+        </div>
+        <div>
+            <label for="country">Country: </label>
+            <select name="country" id="country">
+                <option value="">No Select</option>
+                <option value="bangladesh">Bangladesh</option>
+                <option value="india">India</option>
+                <option value="nepal">Nepal</option>
+
+            </select>
+        </div>
+        <div>
+            <label for="textarea" >Feedback: </label>
+            <textarea name="textarea" id="textarea" cols="30" rows="2"></textarea>
+        </div>
+        <div>
+            <label for="password">Password: </label>
+            <input type="text" id="password">
+        </div>
+        <div>
+            <button type="submit">Save</button>
+        </div>
+    </form>
+
+
+
+    <script src="../dist/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+
+body{
+    background-color: azure;
+    color: black;
+}
+
+div{
+    margin: 0.5rem 0;
+}
+
+input[type="email"]{
+    width: 12rem;
+}
+
+select[name="country"]{
+    width: 12rem;
+}

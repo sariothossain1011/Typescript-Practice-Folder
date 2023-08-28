@@ -27,20 +27,29 @@ var User = /** @class */ (function () {
 }());
 var Student = /** @class */ (function (_super) {
     __extends(Student, _super);
-    function Student(name, roll, registration, technology, institute, curriculum) {
+    function Student(name, roll, registration, technology, institute, curriculum, studentID) {
         var _this = _super.call(this, technology, institute, curriculum) || this;
         _this.name = name;
         _this.roll = roll;
         _this.registration = registration;
+        _this.studentID = studentID;
         return _this;
     }
     Student.prototype.Display = function () {
         console.log("Name : ".concat(this.name, ". Roll : ").concat(this.roll, ". Registration : ").concat(this.registration, ". Technology : ").concat(this.technology, ". Institute : ").concat(this.institute, ". Curriculum : ").concat(this.curriculum));
     };
+    Student.prototype.setStudentID = function (studentID) {
+        this.studentID = studentID;
+    };
+    Student.prototype.getStudentID = function () {
+        return this.studentID;
+    };
     return Student;
 }(User));
 var user = new User("Computer", "Cox-ploy", 15);
-user.curriculum = 30;
+// user.curriculum = 30 // not update this value 
 console.log(user);
-// const student = new Student("Sariot Hossain", 12925, 1502081734, "Computer", "Cox-ploy", 15)
-// student.Display()
+var student = new Student("Sariot Hossain", 12925, 1502081734, "Computer", "Cox-ploy", 15, 456788887654);
+student.Display();
+student.setStudentID(300034);
+console.log(student.getStudentID());
